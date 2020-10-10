@@ -58,7 +58,7 @@ namespace WebApplication2
         public async Task InsertAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = @"INSERT INTO `btc` (`Slug`, `Last`, `Max`, `Min`, `Buy`, `Sell`, `Open`, `Vol`, `Trade`, `Trades`, `Vwap`, `Money`) VALUES (@Slug, @Last, @Max, @Min, @Buy, @Sell, @Open, @Vol, @Trade, @Trades, @Vwap, @Money);";
+            cmd.CommandText = "INSERT INTO " + @Slug.ToString() + @" (`Slug`, `Last`, `Max`, `Min`, `Buy`, `Sell`, `Open`, `Vol`, `Trade`, `Trades`, `Vwap`, `Money`) VALUES (@Slug, @Last, @Max, @Min, @Buy, @Sell, @Open, @Vol, @Trade, @Trades, @Vwap, @Money);";
             BindParams(cmd);
             await cmd.ExecuteNonQueryAsync();
             Id = (int)cmd.LastInsertedId;
@@ -67,7 +67,7 @@ namespace WebApplication2
         public async Task UpdateAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = @"UPDATE `btc` SET `Slug` = @Slug, `Last` = @Last, `Max` = @Max, `Min` = @Min, `Buy` = @Buy, `Sell` = @Sell, `Open` = @Open, `Vol` = @Vol, `Trade` = @Trade, `Trades` = @Trades, `Vwap` = @Vwap, `Money` = @Money WHERE `Id` = @id;";
+            cmd.CommandText = "UPDATE " + @Slug.ToString() + @" SET `Slug` = @Slug, `Last` = @Last, `Max` = @Max, `Min` = @Min, `Buy` = @Buy, `Sell` = @Sell, `Open` = @Open, `Vol` = @Vol, `Trade` = @Trade, `Trades` = @Trades, `Vwap` = @Vwap, `Money` = @Money WHERE `Id` = @id;";
             BindParams(cmd);
             BindId(cmd);
             await cmd.ExecuteNonQueryAsync();
@@ -76,7 +76,7 @@ namespace WebApplication2
         public async Task DeleteAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = @"DELETE FROM `btc` WHERE `Id` = @id;";
+            cmd.CommandText = "DELETE FROM " + @Slug.ToString() + @" WHERE `Id` = @id;";
             BindId(cmd);
             await cmd.ExecuteNonQueryAsync();
         }

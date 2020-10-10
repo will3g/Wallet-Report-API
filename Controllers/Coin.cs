@@ -74,12 +74,12 @@ namespace WebApplication2.Controllers
         }
 
         // PUT api/coin/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutOne(int id, [FromBody] CoinModel body)
+        [HttpPut("{slug}/{id}")]
+        public async Task<IActionResult> PutOne(string slug, int id, [FromBody] CoinModel body)
         {
             await Db.Connection.OpenAsync();
             var query = new CoinPostQuery(Db);
-            var result = await query.FirstPostAsync(id);
+            var result = await query.FirstPostAsync(slug, id);
             if (result is null)
                 return new NotFoundResult();
             result.Slug = body.Slug;
@@ -99,12 +99,12 @@ namespace WebApplication2.Controllers
         }
 
         // DELETE api/coin/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteOne(int id)
+        [HttpDelete("{slug}/{id}")]
+        public async Task<IActionResult> DeleteOne(string slug, int id)
         {
             await Db.Connection.OpenAsync();
             var query = new CoinPostQuery(Db);
-            var result = await query.FirstPostAsync(id);
+            var result = await query.FirstPostAsync(slug, id);
             if (result is null)
                 return new NotFoundResult();
             await result.DeleteAsync();
@@ -112,12 +112,12 @@ namespace WebApplication2.Controllers
         }
 
         // DELETE api/coin
-        [HttpDelete]
-        public async Task<IActionResult> DeleteAll()
+        [HttpDelete("{slug}/all")]
+        public async Task<IActionResult> DeleteAll(string slug)
         {
             await Db.Connection.OpenAsync();
             var query = new CoinPostQuery(Db);
-            await query.DeleteAllAsync();
+            await query.DeleteAllAsync(slug);
             return new OkResult();
         }
 

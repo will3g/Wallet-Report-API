@@ -6037,11 +6037,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\ConnectAPIWithMySQL\\WebApplication2.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Consume-cryptocurrency-API\\WebApplication2.csproj",
       "projectName": "WebApplication2",
-      "projectPath": "C:\\Users\\User\\Desktop\\ConnectAPIWithMySQL\\WebApplication2.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Consume-cryptocurrency-API\\WebApplication2.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\ConnectAPIWithMySQL\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Consume-cryptocurrency-API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -19,7 +19,7 @@ namespace WebApplication2
         public async Task<List<CoinModel>> AllPostsAsync(string slug)
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = "SELECT * FROM " + @slug.ToString() + ";"; ;
+            cmd.CommandText = "SELECT * FROM coin_db." + @slug.ToString() + ";"; ;
             cmd.Parameters.Add(new MySqlParameter
             {
                 ParameterName = "@slug",
@@ -32,7 +32,7 @@ namespace WebApplication2
         public async Task<CoinModel> FirstPostAsync(string slug, int id)
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = "SELECT * FROM " + @slug.ToString() + @" WHERE `Id` = @id";
+            cmd.CommandText = "SELECT * FROM coin_db." + @slug.ToString() + @" WHERE `Id` = @id";
             cmd.Parameters.Add(new MySqlParameter
             {
                 ParameterName = "@id",
@@ -46,7 +46,7 @@ namespace WebApplication2
         public async Task<List<CoinModel>> LatestPostsAsync(string slug)
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = "SELECT * FROM " + @slug.ToString() + " ORDER BY id DESC LIMIT 1;";
+            cmd.CommandText = "SELECT * FROM coin_db." + @slug.ToString() + " ORDER BY id DESC LIMIT 1;";
             cmd.Parameters.Add(new MySqlParameter
             {
                 ParameterName = "@slug",
@@ -61,7 +61,7 @@ namespace WebApplication2
         {
             using var txn = await Db.Connection.BeginTransactionAsync();
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = @"DELETE FROM " + @slug.ToString() + ";";
+            cmd.CommandText = @"DELETE FROM coin_db." + @slug.ToString() + ";";
             await cmd.ExecuteNonQueryAsync();
             await txn.CommitAsync();
         }

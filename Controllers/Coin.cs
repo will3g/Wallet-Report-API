@@ -3,6 +3,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Net;
+using System.Net.Sockets;
 
 namespace WebApplication2.Controllers
 {
@@ -12,6 +14,64 @@ namespace WebApplication2.Controllers
         public Coin(AppDb db)
         {
             Db = db;
+        }
+
+        public static DateTime GetNetworkTime()
+        {
+            //Servidor nacional para melhor latência
+            const string ntpServer = "a.ntp.br";
+
+            // Tamanho da mensagem NTP - 16 bytes (RFC 2030)
+            var ntpData = new byte[48];
+
+            //Indicador de Leap (ver RFC), Versão e Modo
+            ntpData[0] = 0x1B; //LI = 0 (sem warnings), VN = 3 (IPv4 apenas), Mode = 3 (modo cliente)
+
+            var addresses = Dns.GetHostEntry(ntpServer).AddressList;
+
+            //123 é a porta padrão do NTP
+            var ipEndPoint = new IPEndPoint(addresses[0], 123);
+            //NTP usa UDP
+            var socket = new Socket(AddressFamily.InterNetworkV6, SocketType.Dgram, ProtocolType.Udp);
+
+            socket.Connect(ipEndPoint);
+
+            //Caso NTP esteja bloqueado, ao menos nao trava o app
+            socket.ReceiveTimeout = 3000;
+
+            socket.Send(ntpData);
+            socket.Receive(ntpData);
+            socket.Close();
+
+            //Offset para chegar no campo "Transmit Timestamp" (que é
+            //o do momento da saída do servidor, em formato 64-bit timestamp
+            const byte serverReplyTime = 40;
+
+            //Pegando os segundos
+            ulong intPart = BitConverter.ToUInt32(ntpData, serverReplyTime);
+
+            //e a fração de segundos
+            ulong fractPart = BitConverter.ToUInt32(ntpData, serverReplyTime + 4);
+
+            //Passando de big-endian pra little-endian
+            intPart = SwapEndianness(intPart);
+            fractPart = SwapEndianness(fractPart);
+
+            var milliseconds = (intPart * 1000) + ((fractPart * 1000) / 0x100000000L);
+
+            //Tempo em **UTC**
+            var networkDateTime = (new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Utc)).AddMilliseconds((long)milliseconds);
+
+            return networkDateTime.ToLocalTime();
+        }
+
+        // Método usado pelo "Passando de big-endian pra little-endian"
+        static uint SwapEndianness(ulong x)
+        {
+            return (uint)(((x & 0x000000ff) << 24) +
+                           ((x & 0x0000ff00) << 8) +
+                           ((x & 0x00ff0000) >> 8) +
+                           ((x & 0xff000000) >> 24));
         }
 
         [HttpGet("{coin}")]
@@ -28,6 +88,7 @@ namespace WebApplication2.Controllers
                     var stringResult = await response.Content.ReadAsStringAsync();
                     var coinAttr = JsonConvert.DeserializeObject<CoinModel>(stringResult);
                     coinAttr.Slug = coin;
+                    coinAttr.Date = GetNetworkTime();
 
                     await Db.Connection.OpenAsync();
                     coinAttr.Db = Db;
@@ -52,6 +113,7 @@ namespace WebApplication2.Controllers
             return new OkObjectResult(result);
         }
 
+        // GET ALL api/coin/
         [HttpGet("/details/{slug}")]
         public async Task<IActionResult> GetResult(string slug)
         {
@@ -74,12 +136,12 @@ namespace WebApplication2.Controllers
         }
 
         // PUT api/coin/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutOne(int id, [FromBody] CoinModel body)
+        [HttpPut("{slug}/{id}")]
+        public async Task<IActionResult> PutOne(string slug, int id, [FromBody] CoinModel body)
         {
             await Db.Connection.OpenAsync();
             var query = new CoinPostQuery(Db);
-            var result = await query.FirstPostAsync(id);
+            var result = await query.FirstPostAsync(slug, id);
             if (result is null)
                 return new NotFoundResult();
             result.Slug = body.Slug;
@@ -94,17 +156,18 @@ namespace WebApplication2.Controllers
             result.Trades = body.Trades;
             result.Vwap = body.Vwap;
             result.Money = body.Money;
+            result.Date = body.Date;
             await result.UpdateAsync();
             return new OkObjectResult(result);
         }
 
         // DELETE api/coin/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteOne(int id)
+        [HttpDelete("{slug}/{id}")]
+        public async Task<IActionResult> DeleteOne(string slug, int id)
         {
             await Db.Connection.OpenAsync();
             var query = new CoinPostQuery(Db);
-            var result = await query.FirstPostAsync(id);
+            var result = await query.FirstPostAsync(slug, id);
             if (result is null)
                 return new NotFoundResult();
             await result.DeleteAsync();
@@ -112,12 +175,12 @@ namespace WebApplication2.Controllers
         }
 
         // DELETE api/coin
-        [HttpDelete]
-        public async Task<IActionResult> DeleteAll()
+        [HttpDelete("{slug}/all")]
+        public async Task<IActionResult> DeleteAll(string slug)
         {
             await Db.Connection.OpenAsync();
             var query = new CoinPostQuery(Db);
-            await query.DeleteAllAsync();
+            await query.DeleteAllAsync(slug);
             return new OkResult();
         }
 

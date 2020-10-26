@@ -47,7 +47,7 @@ namespace WebApplication2.Controllers
 
         // PUT api/user/{cpf}
         [HttpPut("{cpf}")]
-        public async Task<IActionResult> PutOne(int cpf, [FromBody] UserModel body)
+        public async Task<IActionResult> PutOne(string cpf, [FromBody] UserModel body)
         {
             await Db.Connection.OpenAsync();
             var query = new UserPostQuery(Db);
@@ -58,13 +58,14 @@ namespace WebApplication2.Controllers
             result.Nome = body.Nome;
             result.Senha = body.Senha;
             result.Email = body.Email;
+            result.Admin = body.Admin;
             await result.UpdateAsync();
             return new OkObjectResult(result);
         }
 
         // DELETE api/user/{cpf}
         [HttpDelete("{cpf}")]
-        public async Task<IActionResult> DeleteOne(int cpf)
+        public async Task<IActionResult> DeleteOne(string cpf)
         {
             await Db.Connection.OpenAsync();
             var query = new UserPostQuery(Db);
@@ -80,6 +81,18 @@ namespace WebApplication2.Controllers
             var query = new UserPostQuery(Db);
             await query.DeleteAllAsync();
             return new OkResult();
+        }
+
+        // LOGIN CHECK
+
+        //GET api/user/login/{CPF}/{Senha}
+        [HttpGet("login/{CPF}/{Senha}")]
+        public async Task<IActionResult> CheckOne(string CPF, string Senha)
+        {
+            await Db.Connection.OpenAsync();
+            var query = new UserPostQuery(Db);
+            var result = await query.CheckOneAsync(CPF, Senha);
+            return new OkObjectResult(result);
         }
 
         public AppDb Db { get; }

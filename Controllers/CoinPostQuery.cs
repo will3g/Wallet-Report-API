@@ -88,6 +88,7 @@ namespace WebApplication2
                         Trades = reader.GetInt32(10),
                         Vwap = reader.GetDouble(11),
                         Money = reader.GetDouble(12),
+                        Date = reader.GetDateTime(13),
                     };
                     posts.Add(post);
                 }

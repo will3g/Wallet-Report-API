@@ -6,6 +6,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using MySqlConnector;
+using Ubiety.Dns.Core;
 
 namespace WebApplication2
 {
@@ -25,14 +26,14 @@ namespace WebApplication2
             return await ReadAllAsync(await cmd.ExecuteReaderAsync());
         }
 
-        public async Task<UserModel> FirstPostAsync(int cpf)
+        public async Task<UserModel> FirstPostAsync(string cpf)
         {
             using var cmd = Db.Connection.CreateCommand();
             cmd.CommandText = @"SELECT * FROM user_db.user WHERE `CPF` = @CPF;";
             cmd.Parameters.Add(new MySqlParameter
             {
                 ParameterName = "@CPF",
-                DbType = DbType.Int32,
+                DbType = DbType.String,
                 Value = cpf,
             });
             var result = await ReadAllAsync(await cmd.ExecuteReaderAsync());
@@ -53,14 +54,36 @@ namespace WebApplication2
             return await ReadAllAsync(await cmd.ExecuteReaderAsync());
         }
 
-        public async Task DeleteAsync(int cpf)
+        public async Task<List<UserModel>> CheckOneAsync(string CPF, string Senha)
+        {
+            using var cmd = Db.Connection.CreateCommand();
+            cmd.CommandText = @"USE user_db; SELECT * FROM user WHERE `CPF` = @CPF AND `Senha` = @Senha;";
+
+            cmd.Parameters.Add(new MySqlParameter
+            {
+                ParameterName = "@CPF",
+                DbType = DbType.String,
+                Value = CPF,
+            });
+
+            cmd.Parameters.Add(new MySqlParameter
+            {
+                ParameterName = "@Senha",
+                DbType = DbType.String,
+                Value = Senha,
+            });
+
+            return await ReadAllAsync(await cmd.ExecuteReaderAsync());          
+        }
+
+        public async Task DeleteAsync(string cpf)
         {
             using var cmd = Db.Connection.CreateCommand();
             cmd.CommandText = @"DELETE FROM user_db.user WHERE `CPF` = @CPF;";
             cmd.Parameters.Add(new MySqlParameter
             {
                 ParameterName = "@CPF",
-                DbType = DbType.Int32,
+                DbType = DbType.String,
                 Value = cpf,
             });
             await ReadAllAsync(await cmd.ExecuteReaderAsync());
@@ -87,6 +110,7 @@ namespace WebApplication2
                         Nome = reader.GetString(2),
                         Senha = reader.GetString(3),
                         Email = reader.GetString(4),
+                        Admin = reader.GetBoolean(5),
                     };
                     posts.Add(post);
                 }

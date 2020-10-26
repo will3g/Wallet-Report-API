@@ -1,7 +1,10 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Threading.Tasks;
 using MySqlConnector;
 using Newtonsoft.Json;
+using System.Net;
+using System.Net.Sockets;
 
 namespace WebApplication2
 {
@@ -44,6 +47,8 @@ namespace WebApplication2
         [JsonProperty("money")]
         public double Money { get; set; }
 
+        public DateTime Date { get; set; }
+
         internal AppDb Db { get; set; }
 
         public CoinModel()
@@ -58,7 +63,7 @@ namespace WebApplication2
         public async Task InsertAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = "INSERT INTO coin_db." + @Slug.ToString() + @" (`Slug`, `Last`, `Max`, `Min`, `Buy`, `Sell`, `Open`, `Vol`, `Trade`, `Trades`, `Vwap`, `Money`) VALUES (@Slug, @Last, @Max, @Min, @Buy, @Sell, @Open, @Vol, @Trade, @Trades, @Vwap, @Money);";
+            cmd.CommandText = "INSERT INTO coin_db." + @Slug.ToString() + @" (`Slug`, `Last`, `Max`, `Min`, `Buy`, `Sell`, `Open`, `Vol`, `Trade`, `Trades`, `Vwap`, `Money`, `Date`) VALUES (@Slug, @Last, @Max, @Min, @Buy, @Sell, @Open, @Vol, @Trade, @Trades, @Vwap, @Money, @Date);";
             BindParams(cmd);
             await cmd.ExecuteNonQueryAsync();
             Id = (int)cmd.LastInsertedId;
@@ -67,7 +72,7 @@ namespace WebApplication2
         public async Task UpdateAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = "UPDATE coin_db." + @Slug.ToString() + @" SET `Slug` = @Slug, `Last` = @Last, `Max` = @Max, `Min` = @Min, `Buy` = @Buy, `Sell` = @Sell, `Open` = @Open, `Vol` = @Vol, `Trade` = @Trade, `Trades` = @Trades, `Vwap` = @Vwap, `Money` = @Money WHERE `Id` = @id;";
+            cmd.CommandText = "UPDATE coin_db." + @Slug.ToString() + @" SET `Slug` = @Slug, `Last` = @Last, `Max` = @Max, `Min` = @Min, `Buy` = @Buy, `Sell` = @Sell, `Open` = @Open, `Vol` = @Vol, `Trade` = @Trade, `Trades` = @Trades, `Vwap` = @Vwap, `Money` = @Money, `Date` = @Date WHERE `Id` = @id;";
             BindParams(cmd);
             BindId(cmd);
             await cmd.ExecuteNonQueryAsync();
@@ -164,6 +169,12 @@ namespace WebApplication2
                 ParameterName = "@Money",
                 DbType = DbType.Double,
                 Value = Money,
+            });
+            cmd.Parameters.Add(new MySqlParameter
+            {
+                ParameterName = "@Date",
+                DbType = DbType.DateTime,
+                Value = Date,
             });
         }
     }

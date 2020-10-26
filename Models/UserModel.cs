@@ -16,6 +16,8 @@ namespace WebApplication2
 
         public string Email { get; set; }
 
+        public bool Admin { get; set; }
+
         internal AppDb Db { get; set; }
 
         public UserModel()
@@ -30,7 +32,7 @@ namespace WebApplication2
         public async Task InsertAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = "INSERT INTO user_db.user (`CPF`, `Nome`, `Senha`, `Email`) VALUES (@CPF, @Nome, @Senha, @Email);";
+            cmd.CommandText = "INSERT INTO user_db.user (`CPF`, `Nome`, `Senha`, `Email`, `Admin`) VALUES (@CPF, @Nome, @Senha, @Email, @Admin);";
             BindParams(cmd);
             await cmd.ExecuteNonQueryAsync();
             Id = (int)cmd.LastInsertedId;
@@ -39,7 +41,7 @@ namespace WebApplication2
         public async Task UpdateAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = "UPDATE user_db.user SET `CPF` = @CPF, `Nome` = @Nome, `Senha` = @Senha, `Email` = @Email WHERE `Id` = @id;";
+            cmd.CommandText = "UPDATE user_db.user SET `CPF` = @CPF, `Nome` = @Nome, `Senha` = @Senha, `Email` = @Email, `Admin` = @Admin WHERE `Id` = @id;";
             BindParams(cmd);
             BindId(cmd);
             await cmd.ExecuteNonQueryAsync();
@@ -88,6 +90,12 @@ namespace WebApplication2
                 ParameterName = "@Email",
                 DbType = DbType.String,
                 Value = Email,
+            });
+            cmd.Parameters.Add(new MySqlParameter
+            {
+                ParameterName = "@Admin",
+                DbType = DbType.Boolean,
+                Value = Admin,
             });
         }
     }

@@ -31,8 +31,9 @@ namespace WebApplication2.Controllers
 
             //123 é a porta padrão do NTP
             var ipEndPoint = new IPEndPoint(addresses[0], 123);
+
             //NTP usa UDP
-            var socket = new Socket(AddressFamily.InterNetworkV6, SocketType.Dgram, ProtocolType.Udp);
+            var socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp); // IPV4
 
             socket.Connect(ipEndPoint);
 

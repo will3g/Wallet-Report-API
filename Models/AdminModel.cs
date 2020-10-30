@@ -49,17 +49,17 @@ namespace WebApplication2
             cmd.CommandText = @"USE " + NomeDB + "; CREATE TABLE " + NomeTable + "(" +
                                                     "id int NOT NULL AUTO_INCREMENT,"+
                                                     "Slug varchar(30) DEFAULT NULL," +
+                                                    "Market varchar(30) DEFAULT NULL," +
                                                     "Last float DEFAULT NULL," +
-                                                    "Max float DEFAULT NULL," +
-                                                    "Min float DEFAULT NULL," +
-                                                    "Buy float DEFAULT NULL," +
-                                                    "Sell float DEFAULT NULL," +
-                                                    "Open float DEFAULT NULL," +
-                                                    "Vol float DEFAULT NULL," +
-                                                    "Trade float DEFAULT NULL," +
-                                                    "Trades int DEFAULT NULL," +
-                                                    "Vwap float DEFAULT NULL," +
-                                                    "Money float DEFAULT NULL," +
+                                                    "PercentChange float DEFAULT NULL," +
+                                                    "BaseVolume24 float DEFAULT NULL," +
+                                                    "QuoteVolume24 float DEFAULT NULL," +
+                                                    "BaseVolume float DEFAULT NULL," +
+                                                    "QuoteVolume float DEFAULT NULL," +
+                                                    "HighestBid24 float DEFAULT NULL," +
+                                                    "LowestAsk24 float DEFAULT NULL," +
+                                                    "Hwap float DEFAULT NULL," +
+                                                    "LowestAsk float DEFAULT NULL," +
                                                     "Date datetime," +
                                                     "PRIMARY KEY(id)" +
                                                     ");";

@@ -3,8 +3,6 @@ using System.Data;
 using System.Threading.Tasks;
 using MySqlConnector;
 using Newtonsoft.Json;
-using System.Net;
-using System.Net.Sockets;
 
 namespace WebApplication2
 {
@@ -14,38 +12,38 @@ namespace WebApplication2
 
         public string Slug { get; set; }
 
+        [JsonProperty("market")]
+        public string Market { get; set; }
+
         [JsonProperty("last")]
         public double Last { get; set; }
 
-        [JsonProperty("max")]
-        public double Max { get; set; }
+        [JsonProperty("percentChange")]
+        public double PercentChange { get; set; }
 
-        [JsonProperty("min")]
-        public double Min { get; set; }
+        [JsonProperty("baseVolume24")]
+        public double BaseVolume24 { get; set; }
 
-        [JsonProperty("buy")]
-        public double Buy { get; set; }
+        [JsonProperty("quoteVolume24")]
+        public double QuoteVolume24 { get; set; }
 
-        [JsonProperty("sell")]
-        public double Sell { get; set; }
+        [JsonProperty("baseVolume")]
+        public double BaseVolume { get; set; }
 
-        [JsonProperty("open")]
-        public double Open { get; set; }
+        [JsonProperty("quoteVolume")]
+        public double QuoteVolume { get; set; }
 
-        [JsonProperty("vol")]
-        public double Vol { get; set; }
+        [JsonProperty("highestBid24")]
+        public double HighestBid24 { get; set; }
 
-        [JsonProperty("trade")]
-        public double Trade { get; set; }
+        [JsonProperty("lowestAsk24")]
+        public double LowestAsk24 { get; set; }
 
-        [JsonProperty("trades")]
-        public int Trades { get; set; }
+        [JsonProperty("highestBid")]
+        public double Hwap { get; set; }
 
-        [JsonProperty("vwap")]
-        public double Vwap { get; set; }
-
-        [JsonProperty("money")]
-        public double Money { get; set; }
+        [JsonProperty("lowestAsk")]
+        public double LowestAsk { get; set; }
 
         public DateTime Date { get; set; }
 
@@ -63,7 +61,7 @@ namespace WebApplication2
         public async Task InsertAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = "INSERT INTO coin_db." + @Slug.ToString() + @" (`Slug`, `Last`, `Max`, `Min`, `Buy`, `Sell`, `Open`, `Vol`, `Trade`, `Trades`, `Vwap`, `Money`, `Date`) VALUES (@Slug, @Last, @Max, @Min, @Buy, @Sell, @Open, @Vol, @Trade, @Trades, @Vwap, @Money, @Date);";
+            cmd.CommandText = "INSERT INTO coin_db." + @Slug.ToString() + @" (`Slug`, `Market`, `Last`, `PercentChange`, `BaseVolume24`, `QuoteVolume24`, `BaseVolume`, `QuoteVolume`, `HighestBid24`, `LowestAsk24`, `Hwap`, `LowestAsk`, `Date`) VALUES (@Slug, @Market, @Last, @PercentChange, @BaseVolume24, @QuoteVolume24, @BaseVolume, @QuoteVolume, @HighestBid24, @LowestAsk24, @Hwap, @LowestAsk, @Date);";
             BindParams(cmd);
             await cmd.ExecuteNonQueryAsync();
             Id = (int)cmd.LastInsertedId;
@@ -72,7 +70,7 @@ namespace WebApplication2
         public async Task UpdateAsync()
         {
             using var cmd = Db.Connection.CreateCommand();
-            cmd.CommandText = "UPDATE coin_db." + @Slug.ToString() + @" SET `Slug` = @Slug, `Last` = @Last, `Max` = @Max, `Min` = @Min, `Buy` = @Buy, `Sell` = @Sell, `Open` = @Open, `Vol` = @Vol, `Trade` = @Trade, `Trades` = @Trades, `Vwap` = @Vwap, `Money` = @Money, `Date` = @Date WHERE `Id` = @id;";
+            cmd.CommandText = "UPDATE coin_db." + @Slug.ToString() + @" SET `Slug` = @Slug, `Market` = @Market, `Last` = @Last, `PercentChange` = @PercentChange, `BaseVolume24` = @BaseVolume24, `QuoteVolume24` = @QuoteVolume24, `BaseVolume` = @BaseVolume, `QuoteVolume` = @QuoteVolume, `HighestBid24` = @HighestBid24, `LowestAsk24` = @LowestAsk24, `Hwap` = @Hwap, `LowestAsk` = @LowestAsk, `Date` = @Date WHERE `Id` = @id;";
             BindParams(cmd);
             BindId(cmd);
             await cmd.ExecuteNonQueryAsync();
@@ -106,69 +104,69 @@ namespace WebApplication2
             });
             cmd.Parameters.Add(new MySqlParameter
             {
+                ParameterName = "@Market",
+                DbType = DbType.String,
+                Value = Market,
+            });
+            cmd.Parameters.Add(new MySqlParameter
+            {
                 ParameterName = "@Last",
                 DbType = DbType.Double,
                 Value = Last,
             });
             cmd.Parameters.Add(new MySqlParameter
             {
-                ParameterName = "@Max",
+                ParameterName = "@PercentChange",
                 DbType = DbType.Double,
-                Value = Max,
+                Value = PercentChange,
             });
             cmd.Parameters.Add(new MySqlParameter
             {
-                ParameterName = "@Min",
+                ParameterName = "@BaseVolume24",
                 DbType = DbType.Double,
-                Value = Min,
+                Value = BaseVolume24,
             });
             cmd.Parameters.Add(new MySqlParameter
             {
-                ParameterName = "@Buy",
+                ParameterName = "@QuoteVolume24",
                 DbType = DbType.Double,
-                Value = Buy,
+                Value = QuoteVolume24,
             });
             cmd.Parameters.Add(new MySqlParameter
             {
-                ParameterName = "@Sell",
+                ParameterName = "@BaseVolume",
                 DbType = DbType.Double,
-                Value = Sell,
+                Value = BaseVolume,
             });
             cmd.Parameters.Add(new MySqlParameter
             {
-                ParameterName = "@Open",
+                ParameterName = "@QuoteVolume",
                 DbType = DbType.Double,
-                Value = Open,
+                Value = QuoteVolume,
             });
             cmd.Parameters.Add(new MySqlParameter
             {
-                ParameterName = "@Vol",
+                ParameterName = "@HighestBid24",
                 DbType = DbType.Double,
-                Value = Vol,
+                Value = HighestBid24,
             });
             cmd.Parameters.Add(new MySqlParameter
             {
-                ParameterName = "@Trade",
+                ParameterName = "@LowestAsk24",
                 DbType = DbType.Double,
-                Value = Trade,
+                Value = LowestAsk24,
             });
             cmd.Parameters.Add(new MySqlParameter
             {
-                ParameterName = "@Trades",
-                DbType = DbType.Int32,
-                Value = Trades,
+                ParameterName = "@Hwap",
+                DbType = DbType.Double,
+                Value = Hwap,
             });
             cmd.Parameters.Add(new MySqlParameter
             {
-                ParameterName = "@Vwap",
+                ParameterName = "@LowestAsk",
                 DbType = DbType.Double,
-                Value = Vwap,
-            });
-            cmd.Parameters.Add(new MySqlParameter
-            {
-                ParameterName = "@Money",
-                DbType = DbType.Double,
-                Value = Money,
+                Value = LowestAsk,
             });
             cmd.Parameters.Add(new MySqlParameter
             {

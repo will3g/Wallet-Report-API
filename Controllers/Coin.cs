@@ -82,8 +82,8 @@ namespace WebApplication2.Controllers
             {
                 try
                 {
-                    client.BaseAddress = new Uri("https://brasilbitcoin.com.br");
-                    var response = await client.GetAsync($"/API/prices/{coin}");
+                    client.BaseAddress = new Uri("https://braziliex.com/");
+                    var response = await client.GetAsync($"api/v1/public/ticker/{coin.ToLower()}_brl");
                     response.EnsureSuccessStatusCode();
 
                     var stringResult = await response.Content.ReadAsStringAsync();
@@ -146,17 +146,17 @@ namespace WebApplication2.Controllers
             if (result is null)
                 return new NotFoundResult();
             result.Slug = body.Slug;
+            result.Market = body.Market;
             result.Last = body.Last;
-            result.Max = body.Max;
-            result.Min = body.Min;
-            result.Buy = body.Buy;
-            result.Sell = body.Sell;
-            result.Open = body.Open;
-            result.Vol = body.Vol;
-            result.Trade = body.Trade;
-            result.Trades = body.Trades;
-            result.Vwap = body.Vwap;
-            result.Money = body.Money;
+            result.PercentChange = body.PercentChange;
+            result.BaseVolume24 = body.BaseVolume24;
+            result.QuoteVolume24 = body.QuoteVolume24;
+            result.BaseVolume = body.BaseVolume;
+            result.QuoteVolume = body.QuoteVolume;
+            result.HighestBid24 = body.HighestBid24;
+            result.LowestAsk24 = body.LowestAsk24;
+            result.Hwap = body.Hwap;
+            result.LowestAsk = body.LowestAsk;
             result.Date = body.Date;
             await result.UpdateAsync();
             return new OkObjectResult(result);

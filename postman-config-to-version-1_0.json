@@ -1,0 +1,707 @@
+{
+  "id": "b54d8400-c879-408b-b968-12e7a623358d",
+  "name": "Insomnia",
+  "description": "",
+  "order": [],
+  "folders": [
+    {
+      "id": "181aa43a-35ca-488c-8e3e-903d909593c1",
+      "name": "DB",
+      "description": "",
+      "order": [
+        "fbec45fe-46fe-4804-b635-db9bc7605663",
+        "c3e9c696-769b-4462-9cd4-f8d294f28d69",
+        "e4f5ae8a-ea73-4fd6-9825-9f42ce756b47"
+      ],
+      "collection_id": "b54d8400-c879-408b-b968-12e7a623358d"
+    },
+    {
+      "id": "89159e69-2420-4dfb-9434-442231ce5f08",
+      "name": "Table",
+      "description": "",
+      "order": [
+        "f5361ef3-10d3-45d1-8a3b-10dc4cb8d2ae",
+        "477fcc12-1f94-480d-a009-bf07f7ed66d3",
+        "26cb0408-a3a7-40c6-b527-c208eadd9da3",
+        "c819297f-20ab-41b3-8e25-d3bb27c30a82",
+        "48a71f9a-d35e-4315-a8f6-d4d93169d03e"
+      ],
+      "collection_id": "b54d8400-c879-408b-b968-12e7a623358d"
+    },
+    {
+      "id": "1395e7d0-3bdf-4c08-ab09-83740d133d1c",
+      "name": "LOGIN",
+      "description": "",
+      "order": [
+        "288a504e-d4a5-4a00-a079-dd5bc4674590"
+      ],
+      "collection_id": "b54d8400-c879-408b-b968-12e7a623358d"
+    },
+    {
+      "id": "a73b8a58-94fc-4b9f-a27b-c620502cc3af",
+      "name": "COIN",
+      "description": "",
+      "order": [
+        "7cdceeb2-f413-4a22-bef3-d3f95bc6441e",
+        "478d0ac2-b5c7-40f5-8d73-9a5a48496a30"
+      ],
+      "collection_id": "b54d8400-c879-408b-b968-12e7a623358d"
+    },
+    {
+      "id": "5f42aac2-dd52-4d7e-9a76-fc2cdf7a5ac7",
+      "name": "USER",
+      "description": "",
+      "order": [
+        "83eb1b17-7444-4ad7-8dd5-4583a4a73906",
+        "ecd694de-79d7-407f-adef-833af097a340",
+        "202291cf-c4e6-44eb-83af-e39ad59e70a9",
+        "4d3b2916-f659-43d1-bdde-d64cc0d870d9",
+        "d6e0b8b5-db6b-48f6-b7ef-4bed60644a05",
+        "dbf8a01b-7edf-4e2f-a085-463d8fe61b73"
+      ],
+      "collection_id": "b54d8400-c879-408b-b968-12e7a623358d"
+    }
+  ],
+  "requests": [
+    {
+      "folder": "181aa43a-35ca-488c-8e3e-903d909593c1",
+      "id": "fbec45fe-46fe-4804-b635-db9bc7605663",
+      "name": "Get All DB",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "GET",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/admin/db",
+      "responses": [
+        {
+          "request": "fbec45fe-46fe-4804-b635-db9bc7605663",
+          "id": "229e0185-fa4b-466c-ad30-2cc3a19fa1ae",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "181aa43a-35ca-488c-8e3e-903d909593c1",
+      "id": "c3e9c696-769b-4462-9cd4-f8d294f28d69",
+      "name": "Create DB",
+      "dataMode": "raw",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Content-Type:application/json\r\nAccept:*/*\r\n",
+      "method": "POST",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/admin/db",
+      "responses": [
+        {
+          "request": "c3e9c696-769b-4462-9cd4-f8d294f28d69",
+          "id": "0a5a89f9-f22a-4276-a584-7f78007eff29",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "rawModeData": "{\n\t\"NomeDB\": \"coin_db\"\n}",
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": ""
+        },
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "181aa43a-35ca-488c-8e3e-903d909593c1",
+      "id": "e4f5ae8a-ea73-4fd6-9825-9f42ce756b47",
+      "name": "Delete DB",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "DELETE",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/admin/coin_db",
+      "responses": [
+        {
+          "request": "e4f5ae8a-ea73-4fd6-9825-9f42ce756b47",
+          "id": "fbd4e8be-04b7-4ec0-af55-8eb8af1d836f",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "89159e69-2420-4dfb-9434-442231ce5f08",
+      "id": "f5361ef3-10d3-45d1-8a3b-10dc4cb8d2ae",
+      "name": "Get Tables",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "GET",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/admin/coin_db/table",
+      "responses": [
+        {
+          "request": "f5361ef3-10d3-45d1-8a3b-10dc4cb8d2ae",
+          "id": "d927d851-1f56-4925-9eb2-3d80b5d37f69",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "89159e69-2420-4dfb-9434-442231ce5f08",
+      "id": "477fcc12-1f94-480d-a009-bf07f7ed66d3",
+      "name": "Create User Table",
+      "dataMode": "raw",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Content-Type:application/json\r\nAccept:*/*\r\n",
+      "method": "POST",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/admin/user/db/table/",
+      "responses": [
+        {
+          "request": "477fcc12-1f94-480d-a009-bf07f7ed66d3",
+          "id": "013fba1e-462e-4789-bc84-7055ec9d465d",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "rawModeData": "{\n\t\"NomeDB\": \"user_db\",\n\t\"NomeTable\": \"user\"\n}",
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": ""
+        },
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "89159e69-2420-4dfb-9434-442231ce5f08",
+      "id": "26cb0408-a3a7-40c6-b527-c208eadd9da3",
+      "name": "Create Coin Table",
+      "dataMode": "raw",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Content-Type:application/json\r\nAccept:*/*\r\n",
+      "method": "POST",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/admin/coin/db/table/",
+      "responses": [
+        {
+          "request": "26cb0408-a3a7-40c6-b527-c208eadd9da3",
+          "id": "15198403-cbf7-466c-9c0d-a2a57524628b",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "rawModeData": "{\n\t\"NomeDB\": \"coin_db\",\n\t\"NomeTable\": \"zrx\"\n}",
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": ""
+        },
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "89159e69-2420-4dfb-9434-442231ce5f08",
+      "id": "c819297f-20ab-41b3-8e25-d3bb27c30a82",
+      "name": "Update User Table Name",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "PUT",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/admin/coin_db/XRP/ZZZ",
+      "responses": [
+        {
+          "request": "c819297f-20ab-41b3-8e25-d3bb27c30a82",
+          "id": "8bab50b7-8b79-492f-bfcd-451c279cf829",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "89159e69-2420-4dfb-9434-442231ce5f08",
+      "id": "48a71f9a-d35e-4315-a8f6-d4d93169d03e",
+      "name": "Delete Table",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "DELETE",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/admin/coin_db/gmr",
+      "responses": [
+        {
+          "request": "48a71f9a-d35e-4315-a8f6-d4d93169d03e",
+          "id": "b0aa17f4-9cad-42ee-a8ce-95b648221bd9",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "1395e7d0-3bdf-4c08-ab09-83740d133d1c",
+      "id": "288a504e-d4a5-4a00-a079-dd5bc4674590",
+      "name": "GET LOGIN",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "GET",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/user/login/12154187608/191918",
+      "responses": [
+        {
+          "request": "288a504e-d4a5-4a00-a079-dd5bc4674590",
+          "id": "bbb299c8-32a3-4100-a194-6cb1e47da596",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "a73b8a58-94fc-4b9f-a27b-c620502cc3af",
+      "id": "7cdceeb2-f413-4a22-bef3-d3f95bc6441e",
+      "name": "Get Coin",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "GET",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/coin/zrx",
+      "responses": [
+        {
+          "request": "7cdceeb2-f413-4a22-bef3-d3f95bc6441e",
+          "id": "75b9bf72-5297-4499-b0e1-cf1d2647a255",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "a73b8a58-94fc-4b9f-a27b-c620502cc3af",
+      "id": "478d0ac2-b5c7-40f5-8d73-9a5a48496a30",
+      "name": "Get Coin DB",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "GET",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 2}}/omg",
+      "responses": [
+        {
+          "request": "478d0ac2-b5c7-40f5-8d73-9a5a48496a30",
+          "id": "1cae8cd7-c8c3-43e3-94f2-cb1a5ceaf503",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "5f42aac2-dd52-4d7e-9a76-fc2cdf7a5ac7",
+      "id": "83eb1b17-7444-4ad7-8dd5-4583a4a73906",
+      "name": "Get All Users",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "GET",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/user/",
+      "responses": [
+        {
+          "request": "83eb1b17-7444-4ad7-8dd5-4583a4a73906",
+          "id": "14d86271-f142-4b55-9b9d-bb867ccd61f5",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "5f42aac2-dd52-4d7e-9a76-fc2cdf7a5ac7",
+      "id": "ecd694de-79d7-407f-adef-833af097a340",
+      "name": "Get User",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "GET",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/user/12154187609",
+      "responses": [
+        {
+          "request": "ecd694de-79d7-407f-adef-833af097a340",
+          "id": "2ea119ce-447b-4feb-8374-ab08d766f19c",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "5f42aac2-dd52-4d7e-9a76-fc2cdf7a5ac7",
+      "id": "202291cf-c4e6-44eb-83af-e39ad59e70a9",
+      "name": "Create User",
+      "dataMode": "raw",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Content-Type:application/json\r\nAccept:*/*\r\n",
+      "method": "POST",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/user/",
+      "responses": [
+        {
+          "request": "202291cf-c4e6-44eb-83af-e39ad59e70a9",
+          "id": "93d9295b-e623-4336-8db0-177ce63f1009",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "rawModeData": "{\n\t\"CPF\": \"12154187608\",\n\t\"Nome\": \"Tiago\",\n\t\"Senha\": \"191918\",\n\t\"Email\": \"tiago@gmail.com\",\n\t\"Admin\": false\n}",
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": ""
+        },
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "5f42aac2-dd52-4d7e-9a76-fc2cdf7a5ac7",
+      "id": "4d3b2916-f659-43d1-bdde-d64cc0d870d9",
+      "name": "Update User",
+      "dataMode": "raw",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Content-Type:application/json\r\nAccept:*/*\r\n",
+      "method": "PUT",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/user/12154187609",
+      "responses": [
+        {
+          "request": "4d3b2916-f659-43d1-bdde-d64cc0d870d9",
+          "id": "aed56f53-939f-449a-bdc6-507028daeb42",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "rawModeData": "{\n\t\"CPF\": \"12154187609\",\n\t\"Nome\": \"TiagoA\",\n\t\"Senha\": \"191919\",\n\t\"Email\": \"tiago@gmail.com\",\n\t\"Admin\": false\n}",
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": ""
+        },
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "5f42aac2-dd52-4d7e-9a76-fc2cdf7a5ac7",
+      "id": "d6e0b8b5-db6b-48f6-b7ef-4bed60644a05",
+      "name": "Delete User",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "DELETE",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/user/12154187609",
+      "responses": [
+        {
+          "request": "d6e0b8b5-db6b-48f6-b7ef-4bed60644a05",
+          "id": "7a909927-cfc9-48fd-ba1d-498de2b8c265",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    },
+    {
+      "folder": "5f42aac2-dd52-4d7e-9a76-fc2cdf7a5ac7",
+      "id": "dbf8a01b-7edf-4e2f-a085-463d8fe61b73",
+      "name": "Delete All Users",
+      "dataDisabled": false,
+      "descriptionFormat": "markdown",
+      "description": "",
+      "headers": "Accept:*/*\r\n",
+      "method": "DELETE",
+      "currentHelper": "",
+      "pathVariables": {},
+      "url": "{{Server 1}}/user/",
+      "responses": [
+        {
+          "request": "dbf8a01b-7edf-4e2f-a085-463d8fe61b73",
+          "id": "60634e7e-2022-4423-8c25-da35d577f788",
+          "name": "Response_200",
+          "responseCode": {
+            "code": 200,
+            "name": "200"
+          },
+          "headers": [],
+          "language": "Text"
+        }
+      ],
+      "collectionId": "b54d8400-c879-408b-b968-12e7a623358d",
+      "queryParams": [],
+      "headerData": [
+        {
+          "key": "Accept",
+          "value": "*/*"
+        }
+      ],
+      "pathVariableData": []
+    }
+  ],
+  "variables": [
+    {
+      "key": "Server 1",
+      "value": "https://localhost:5001/api"
+    },
+    {
+      "key": "Server 2",
+      "value": "https://localhost:5001/details"
+    }
+  ]
+}

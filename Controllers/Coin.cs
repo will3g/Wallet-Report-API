@@ -16,25 +16,8 @@ namespace WebApplication2.Controllers
             Db = db;
         }
 
-        public static DateTime GetNetworkTime()
+        public static DateTime ReturnDateTimeNow(Socket socket, IPEndPoint ipEndPoint, byte[] ntpData)
         {
-            //Servidor nacional para melhor latência
-            const string ntpServer = "a.ntp.br";
-
-            // Tamanho da mensagem NTP - 16 bytes (RFC 2030)
-            var ntpData = new byte[48];
-
-            //Indicador de Leap (ver RFC), Versão e Modo
-            ntpData[0] = 0x1B; //LI = 0 (sem warnings), VN = 3 (IPv4 apenas), Mode = 3 (modo cliente)
-
-            var addresses = Dns.GetHostEntry(ntpServer).AddressList;
-
-            //123 é a porta padrão do NTP
-            var ipEndPoint = new IPEndPoint(addresses[0], 123);
-
-            //NTP usa UDP
-            var socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp); // IPV4
-
             socket.Connect(ipEndPoint);
 
             //Caso NTP esteja bloqueado, ao menos nao trava o app
@@ -64,6 +47,34 @@ namespace WebApplication2.Controllers
             var networkDateTime = (new DateTime(1900, 1, 1, 0, 0, 0, DateTimeKind.Utc)).AddMilliseconds((long)milliseconds);
 
             return networkDateTime.ToLocalTime();
+        }
+
+        public static DateTime GetNetworkTime()
+        {
+            //Servidor nacional para melhor latência
+            const string ntpServer = "a.ntp.br";
+
+            // Tamanho da mensagem NTP - 16 bytes (RFC 2030)
+            var ntpData = new byte[48];
+
+            //Indicador de Leap (ver RFC), Versão e Modo
+            ntpData[0] = 0x1B; //LI = 0 (sem warnings), VN = 3 (IPv4 apenas), Mode = 3 (modo cliente)
+
+            var addresses = Dns.GetHostEntry(ntpServer).AddressList;
+
+            //123 é a porta padrão do NTP
+            var ipEndPoint = new IPEndPoint(addresses[0], 123);
+
+            Socket socket;
+
+            //NTP usa UDP
+            if (ipEndPoint.AddressFamily == AddressFamily.InterNetwork) {
+                socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp); // IPV4
+                return ReturnDateTimeNow(socket, ipEndPoint, ntpData);
+            }
+
+            socket = new Socket(AddressFamily.InterNetworkV6, SocketType.Dgram, ProtocolType.Udp); // IPV6
+            return ReturnDateTimeNow(socket, ipEndPoint, ntpData);
         }
 
         // Método usado pelo "Passando de big-endian pra little-endian"

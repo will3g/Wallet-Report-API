@@ -1,0 +1,646 @@
+{
+  "info": {
+    "name": "Insomnia",
+    "_postman_id": "699dd263-3d02-4a14-bcd1-07be0f8b7c55",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "DB",
+      "description": "",
+      "item": [
+        {
+          "id": "efdce381-4fd6-4f42-9eaf-2b3ce256fd17",
+          "name": "Get All DB",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "admin/db"
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "489e05bd-d780-426f-a177-2eb29fd36c8b"
+            }
+          ]
+        },
+        {
+          "id": "00ed9210-f35f-4bb2-999e-7d79cbe8726b",
+          "name": "Create DB",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "admin/db"
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NomeDB\": \"coin_db\"\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "c3305480-e5eb-47bd-b09d-3312437ab8fc"
+            }
+          ]
+        },
+        {
+          "id": "6bb1326e-51dd-4b6e-830d-3d7151cd310f",
+          "name": "Delete DB",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "admin/coin_db"
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "a547f44f-3a61-46da-9899-66196d06a95c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Table",
+      "description": "",
+      "item": [
+        {
+          "id": "ed06041c-cb94-48b6-ba1a-0a3477180a3f",
+          "name": "Get Tables",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "admin/coin_db/table"
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "21165e5c-284a-4c1a-87fd-db844aa77b7c"
+            }
+          ]
+        },
+        {
+          "id": "f430ff25-d45c-4d63-a33d-6e8bd8c04867",
+          "name": "Create User Table",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "admin/user/db/table/"
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NomeDB\": \"user_db\",\r\n  \"NomeTable\": \"user\"\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "f09315f0-d835-4066-a57c-a92bc619dbd4"
+            }
+          ]
+        },
+        {
+          "id": "2b5e902e-0a24-4711-add8-a279b579e7ef",
+          "name": "Create Coin Table",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "admin/coin/db/table/"
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"NomeDB\": \"coin_db\",\r\n  \"NomeTable\": \"zrx\"\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "8f0bba1b-203f-4bb2-a529-0c30952fffb7"
+            }
+          ]
+        },
+        {
+          "id": "94e2964d-f7ee-47bb-b284-d23c2e2f8cec",
+          "name": "Update User Table Name",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "admin/coin_db/XRP/ZZZ"
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "dc1b3e5b-8bd9-4a42-9714-7195f2822f37"
+            }
+          ]
+        },
+        {
+          "id": "8f15c95b-0410-4a99-8857-a5cfd8ab6dab",
+          "name": "Delete Table",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "admin/coin_db/gmr"
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "4b9246ec-c6a4-4fbd-8c55-3b8366d26104"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LOGIN",
+      "description": "",
+      "item": [
+        {
+          "id": "e7d7eee5-be32-465b-9858-60a9bd4902f9",
+          "name": "GET LOGIN",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "user/login/12154187608/191918"
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "275852cc-4ff5-4507-9136-44910cc494f8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "COIN",
+      "description": "",
+      "item": [
+        {
+          "id": "fc7d2258-8075-48e7-882a-20740940c3bb",
+          "name": "Get Coin",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "coin/zrx"
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "9867d0df-f5f3-459e-aed9-7c93e5166d40"
+            }
+          ]
+        },
+        {
+          "id": "220e5094-2745-42de-922d-6e558c5f78e0",
+          "name": "Get Coin DB",
+          "request": {
+            "url": {
+              "host": "{{Server 2}}",
+              "path": [
+                "omg"
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "f5781f23-14f2-4274-89b5-a804ed985be4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "USER",
+      "description": "",
+      "item": [
+        {
+          "id": "515e0433-e307-4ec1-8284-5bdde6f43935",
+          "name": "Get All Users",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "user/"
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "cacc8673-8af9-4a76-b776-95d27284b102"
+            }
+          ]
+        },
+        {
+          "id": "48b9d13a-a8d2-4cbe-9197-f4172e07977a",
+          "name": "Get User",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "user/12154187609"
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "e2f829da-7c46-4daf-bda1-318e337144a7"
+            }
+          ]
+        },
+        {
+          "id": "7b003f97-b01c-431e-bb63-dd3e47155adb",
+          "name": "Create User",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "user/"
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"CPF\": \"12154187608\",\r\n  \"Nome\": \"Tiago\",\r\n  \"Senha\": \"191918\",\r\n  \"Email\": \"tiago@gmail.com\",\r\n  \"Admin\": false\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "467e64cb-d5b3-4cf0-bfb5-6bfdbd50dbf0"
+            }
+          ]
+        },
+        {
+          "id": "a47e1d0b-3ec7-4386-87f8-4931dcb6f1d3",
+          "name": "Update User",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "user/12154187609"
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": "",
+                "disabled": false
+              },
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"CPF\": \"12154187609\",\r\n  \"Nome\": \"TiagoA\",\r\n  \"Senha\": \"191919\",\r\n  \"Email\": \"tiago@gmail.com\",\r\n  \"Admin\": false\r\n}",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "1d40b576-df34-4d4a-b70f-ef024f7e421b"
+            }
+          ]
+        },
+        {
+          "id": "87d46a17-ca84-4074-862b-fc41490a9590",
+          "name": "Delete User",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "user/12154187609"
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "197cffe5-a869-48f3-b078-8549d8963c4a"
+            }
+          ]
+        },
+        {
+          "id": "87f97996-1c9c-4a01-8eac-da36205ba2d9",
+          "name": "Delete All Users",
+          "request": {
+            "url": {
+              "host": "{{Server 1}}",
+              "path": [
+                "user/"
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "*/*",
+                "disabled": false
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "disabled": false
+            },
+            "description": ""
+          },
+          "response": [
+            {
+              "header": [],
+              "code": 200,
+              "name": "Response_200",
+              "id": "47cb40f2-33c4-4fc3-b9d5-788291eef6db"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "Server 1",
+      "value": "https://localhost:5001/api"
+    },
+    {
+      "key": "Server 2",
+      "value": "https://localhost:5001/details"
+    }
+  ]
+}

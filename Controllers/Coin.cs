@@ -99,7 +99,7 @@ namespace WebApplication2.Controllers
 
                     var stringResult = await response.Content.ReadAsStringAsync();
                     var coinAttr = JsonConvert.DeserializeObject<CoinModel>(stringResult);
-                    coinAttr.Slug = coin;
+                    coinAttr.Slug = coin.ToLower();
                     coinAttr.Date = GetNetworkTime();
 
                     await Db.Connection.OpenAsync();

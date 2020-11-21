@@ -1,0 +1,227 @@
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.exe
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.csprojAssemblyReference.cache
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfo.cs
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.RazorTargetAssemblyInfo.cache
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.Manifest.cache
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.xml
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CopyComplete
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.deps.json
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.json
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.dev.json
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\User\Desktop\WebApplication2\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\User\Desktop\WebApplication2\obj\Debug\netcoreapp3.1\WebApplication2.genruntimeconfig.cache
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\WebApplication2.exe
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\WebApplication2.deps.json
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.json
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.dev.json
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\WebApplication2.csprojAssemblyReference.cache
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfo.cs
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\WebApplication2.RazorTargetAssemblyInfo.cache
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CopyComplete
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.Manifest.cache
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.xml
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\WebApplication2.genruntimeconfig.cache
+C:\Users\User\Desktop\ConnectAPIWithMySQL\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\ConnectAPIWithMySQL\obj\Debug\netcoreapp3.1\WebApplication2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\WebApplication2.exe
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\WebApplication2.deps.json
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.json
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.dev.json
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\WebApplication2.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfo.cs
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\WebApplication2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\WebApplication2.RazorTargetAssemblyInfo.cache
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CopyComplete
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.Manifest.cache
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.xml
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\User\Desktop\Consume-cryptocurrency-API\obj\Debug\netcoreapp3.1\WebApplication2.genruntimeconfig.cache
+<<<<<<< HEAD
+=======
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.exe
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.deps.json
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.json
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.dev.json
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.csprojAssemblyReference.cache
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfoInputs.cache
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfo.cs
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CoreCompileInputs.cache
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.RazorTargetAssemblyInfo.cache
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CopyComplete
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.Manifest.cache
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.xml
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\Tiago Anderson\Documents\GitHub\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.genruntimeconfig.cache
+>>>>>>> 45c63b9b5c85e3de32620779bf6bd30e66d6c223
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.exe
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.deps.json
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.json
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.dev.json
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfo.cs
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.RazorTargetAssemblyInfo.cache
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CopyComplete
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.Manifest.cache
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.xml
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\User\Desktop\Wallet-Report-API\obj\Debug\netcoreapp3.1\WebApplication2.genruntimeconfig.cache
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\Configuration\Insominia config\Insomnia-requests-config.json
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\Configuration\Postman config\postman-config-to-version-1_0.json
+C:\Users\User\Desktop\Wallet-Report-API\bin\Debug\netcoreapp3.1\Configuration\Postman config\postman-config-to-version-2_0.json
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\WebApplication2.exe
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\WebApplication2.deps.json
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.json
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\WebApplication2.runtimeconfig.dev.json
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\Zstandard.Net.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\Renci.SshNet.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\WebApplication2.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\WebApplication2.AssemblyInfo.cs
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\WebApplication2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\WebApplication2.RazorTargetAssemblyInfo.cache
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\WebApplication2.csproj.CopyComplete
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.Manifest.cache
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\staticwebassets\WebApplication2.StaticWebAssets.xml
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\WebApplication2.dll
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\WebApplication2.pdb
+C:\Users\User\Desktop\Wallet-Report-API\Code\obj\Debug\netcoreapp3.1\WebApplication2.genruntimeconfig.cache
